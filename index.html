@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Css/style.css">
+    <title>The Cat Adoption Agency</title>
+    
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* padding: 30px 100px; */
+    z-index: 1;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    overflow: hidden;
+    background-color: #006266;
+
+}
+
+
+header ul {
+    list-style-type: none;
+    /* position: relative; */
+    display: flex;
+}
+
+header ul li a {
+    /* position: relative;
+    margin: 0 15px;
+    color:black;
+    text-decoration: none; */
+
+    float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  font-weight: bolder;
+}
+
+
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(/assets/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.textBx {
+    text-transform: uppercase;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: black;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 25px;
+
+}
+.banner h3 {
+    /* font-weight: 1.5em; */
+    color: black;
+    font-weight: bolder;
+    margin: 25px;
+    font-size: 34px;
+}
+
+.services {
+    background: #DEDEDE;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+
+.content1 {
+    display: grid;
+    column-gap: 111px;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px;
+}
+
+.content2 {
+    display: grid;
+    column-gap: 111px;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px;
+    box-sizing: border-box !important;
+}
+
+.content3 {
+    display: grid;
+    column-gap: 111px;
+    grid-template-columns: auto auto auto auto;
+    padding: 25px;
+}
+
+
+.serviceBx img {
+    width: -webkit-fill-available;
+    height: 450px;
+}
+
+ .services .heading.white {
+    color: black;
+    display: grid;
+}
+
+.services .heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+.serviceBx {
+    padding: 40px 20px;
+    background-color: white;
+    color: black;
+    width: 340px;
+    margin: 20px;
+    text-align: center;
+    max-height: 590.5px;
+}
+
+
+
+.client {
+    display: grid;
+    /* column-gap: 50px; */
+    grid-template-columns: auto auto auto ;
+    padding: 25px;
+    background: white;
+    /* left: 313px;
+    position: absolute; */
+}
+
+.client .imgbx {
+  padding: 40px 18px;
+    background-color: white;
+    color: black;
+    width: 578px;
+    margin: 20px;
+    /* text-align: center; */
+    transition: 0.5s;
+}
+
+.heading_new {
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+#center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#center h2 {
+    color: #b53471;
+}
+#center h3 {
+    color: #555555;
+}
+
+#center_new {
+    color: white;
+    background-color: #006266;
+    padding: 7px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#footer_color {
+    background-color: black;
+}
+#footer_color {
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#center_footer {
+ text-align: center;
+}
+
+#show {
+        
+    background: #DEDEDE;  
+    padding: 5px;
+    text-decoration: none;
+        
+            
+}
+
+.content2 , .content3 {
+    display: none;
+}
+
+/* @media only screen and (min-width: 768px) { */
+    /* For desktop: */
+    /* body {
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins',sans-serif;
+        scroll-behavior: smooth;
+    } */
+  /* } */
+
+  body {
+    width: fit-content;
+   
+
+  }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation bar start -->
+    <header>
+        <ul>
+            <li><a href="https://ottawahumane.ca/adopt/cats-for-adoption/" target="_blank">ABOUT US</a></li>
+            <li><a href="https://ottawahumane.ca/adopt/cats-for-adoption/" target="_blank">ADOPT A CAT</a></li>
+            <li><a href="https://ottawahumane.ca/adopt/cats-for-adoption/" target="_blank">DONATE</a></li>
+            <li><a href="https://ottawahumane.ca/adopt/cats-for-adoption/" target="_blank">CONTACT US</a></li>
+        </ul>
+    </header>
+    <!-- Navigation bar ends -->
+    
+    <!-- Background Hero banner Image -->
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>
+        <span>Finding Cats Their Forever Home</span></h2>
+        
+        <h3>Together, we make every cat feel loved.</h3>
+        
+        </section>
+    <!-- Background Hero banner ends  -->
+
+    <!-- Our adoptables Cats start  -->
+    <section class="services" id="services">
+        <div class="heading white">
+        <h2>OUR ADOPTABLES</h2>
+        </div>
+        
+        <div class="content1" id="content1">
+        <div  class="serviceBx"><img src="/assets/cat1.jpg">
+        <h2 id="demo"></h2>
+        <h2 id="demo1"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat2.jpg">
+            <h2 id="demo2"></h2>
+            <h2 id="demo3"></h2>
+        </div>
+        
+        
+        <div class="serviceBx"><img src="/assets/cat3.jpg">
+            <h2 id="demo4"></h2>
+            <h2 id="demo5"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat4.jpg">
+            <h2 id="demo6"></h2>
+            <h2 id="demo7"></h2>
+        </div>
+       </div>
+
+       <div class="content2" id="content2">
+        <div  class="serviceBx"><img src="/assets/cat5.jpg">
+        <h2 id="demo8"></h2>
+        <h2 id="demo9"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat6.jpg">
+            <h2 id="demo10"></h2>
+            <h2 id="demo11"></h2>
+        </div>
+        
+        
+        <div class="serviceBx"><img src="/assets/cat7.jpg">
+            <h2 id="demo12"></h2>
+            <h2 id="demo13"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat8.jpg">
+            <h2 id="demo14"></h2>
+            <h2 id="demo15"></h2>
+        </div>
+       </div>
+
+       <div class="content3" id="content3">
+        <div  class="serviceBx"><img src="/assets/cat9.jpg">
+        <h2 id="demo16"></h2>
+        <h2 id="demo17"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat10.jpg">
+            <h2 id="demo18"></h2>
+            <h2 id="demo19"></h2>
+        </div>
+        
+        
+        <div class="serviceBx"><img src="/assets/cat11.jpg">
+            <h2 id="demo20"></h2>
+            <h2 id="demo21"></h2>
+        </div>
+        
+        <div class="serviceBx"><img src="/assets/cat12.jpg">
+            <h2 id="demo22"></h2>
+            <h2 id="demo23"></h2>
+        </div>
+       </div>
+
+    </section>
+    <section id="show">
+    <div id="center">
+        <button id="center_new" onclick="showMore()">SHOW MORE</button>
+        </div>
+    </section>
+    <!-- Our adoptables Cats ends  -->
+
+    <!-- How You Can Help section Start  -->
+
+
+    <h2 class="heading_new">HOW YOU CAN HELP</h2>
+    <section class="client" id="client">
+        <!-- <div class="heading white"> -->
+
+        
+            
+        <!-- </div> -->
+        <div class="imgbx">
+
+            <div id="center">
+            <h2>ADOPT</h2>
+            <h3>HELP CATS HAVE A HOME</h3>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa deserunt mollit anim id est laborum.</p>
+                <div id="center">
+                <button id="center_new">LEARN MORE</button>
+                </div>
+                </div>
+
+                <div class="imgbx">
+                    <div id="center">
+                    <h2>DONATE</h2>
+                    <h3>YOUR FINANCIAL SUPPORTS SAVE LIVES</h3>
+                    </div>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in deserunt mollit anim id est laborum.</p>
+
+                    <div id="center">
+                        <button id="center_new">LEARN MORE</button>
+                        </div>
+                </div>
+
+                <div class="imgbx">
+                    <div id="center">
+                    <h2>VOLUNTEER</h2>
+                    <h3>WE NEED YOUR HELP</h3>
+                    </div>
+
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div id="center">
+                            <button id="center_new">LEARN MORE</button>
+                            </div>
+
+                    </div>
+        </div>
+    </section>
+    <!-- How You Can Help section ends  -->
+
+
+    <!-- footer start  -->
+    <footer>
+        <div id="footer_color">
+        <h2 id="center_footer">AMIT KUMAR SINGH - 101392431</h2>
+        </div>
+    </footer>
+    <!-- footer ends  -->
+   
+        <script src="/Js/script.js  "></script>
+
+</body>
+</html>
